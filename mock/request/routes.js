@@ -1,7 +1,7 @@
+const topicsResponse = require('../response/topics');
+
 function register(app) {
-    app.get('/', (req, res) => {
-        res.send('Welcome to the server')
-    })
+    app.get('/topics', topicsResponse.getTopics);
 }
 
 module.exports = {
