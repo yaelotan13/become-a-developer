@@ -7,7 +7,10 @@ const useStyles = makeStyles(theme => ({
         width: '27vw',
         marginRight: '3vw',
         marginBottom: '3vh',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        [theme.breakpoints.down('sm')]: {
+            width: '80vw',
+        },
     },
     img: {
         height: '25vh'

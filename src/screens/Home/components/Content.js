@@ -13,15 +13,27 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        [theme.breakpoints.down('sm')]: {
+            width: '80vw',
+            paddingRight: '10vw',
+            paddingLeft: '10vw',
+        },
     },
     title: {
-        color: 'white'
+        color: 'white',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 27,
+            lineHeight: 1
+        },
     },
     subTitle: {
         marginTop: '3vh',
         color: 'white',
-        marginBottom: '8vh'
+        marginBottom: '8vh',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 16,
+        },
     }
 }));
 

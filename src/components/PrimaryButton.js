@@ -14,7 +14,11 @@ const useStyle = makeStyles(theme => ({
         '&:hover': {
             color: 'black',
             backgroundColor: 'white',
-        }
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '60vw',
+            height: '8vh',
+        },
     }
 }));
 
