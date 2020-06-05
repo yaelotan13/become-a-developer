@@ -1,10 +1,10 @@
 export default {
   h1: {
     fontWeight: 800,
-    fontSize: '52px',
+    fontSize: '58px',
     letterSpacing: '2px',
     lineHeight: '40px',
-    fontFamily: "'Nunito Sans', 'sans-serif'",
+    fontFamily: "'Patua One', 'cursive'",
   },
   h2: {
     fontWeight: 700,
