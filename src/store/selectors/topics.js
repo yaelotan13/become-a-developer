@@ -1,0 +1,1 @@
+export const topicsSlector = (state) => state.topics;
