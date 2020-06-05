@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import { Element } from 'react-scroll';
 
 import Topic from './Topic';
 
@@ -28,14 +29,16 @@ const Topics = (props) => {
     const { topics } = props;
 
     return (
-        <Box className={classes.container}>
-            <Typography variant="h4" className={classes.title}>Topics:</Typography>
-            <Box className={classes.topicsContainer}>
-                {topics.map(topic => 
-                    <Topic key={topic.id} title={topic.title} description={topic.description} image={developer} />
-                )}
+        <Element name="topics" className="element" >
+            <Box className={classes.container}>
+                <Typography variant="h4" className={classes.title}>Topics:</Typography>
+                <Box className={classes.topicsContainer}>
+                    {topics.map(topic => 
+                        <Topic key={topic.id} title={topic.title} description={topic.description} image={developer} />
+                    )}
+                </Box>
             </Box>
-        </Box>
+        </Element>
     )
 };
 
