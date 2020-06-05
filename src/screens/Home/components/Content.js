@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Link } from 'react-scroll';
 
 import { PrimaryButton } from '../../../components';
+import light from '../../../assets/images/light-colors.png';
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -20,10 +21,25 @@ const useStyles = makeStyles(theme => ({
             paddingLeft: '10vw',
         },
     },
+    img: {
+        backgroundImage: `url(${light})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        width: '25vw',
+        height: '30vh',
+        marginTop: '-10vh',
+        marginBottom: '5vh',
+        [theme.breakpoints.down('sm')]: {
+            width: '55vw',
+            height: '30vh',
+            marginBottom: '2vh',
+        },
+    },
     title: {
         color: 'white',
         [theme.breakpoints.down('sm')]: {
-            fontSize: 27,
+            fontSize: 30,
             lineHeight: 1
         },
     },
@@ -42,6 +58,7 @@ const Content = (props) => {
 
     return (
         <Box className={classes.container}>
+            <Box className={classes.img} />
             <Typography variant="h1" className={classes.title}>Become a Software Developer</Typography>
             <Typography variant="h4" className={classes.subTitle}>All you need for starting your new career in one place</Typography>
             <Link 
