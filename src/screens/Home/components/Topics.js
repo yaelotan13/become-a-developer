@@ -12,15 +12,25 @@ const useStyles = makeStyles(theme => ({
         width: '100vw',
         height: '100vh',
         paddingLeft: '6vw',
-        paddingRight: '6vw'
+        paddingRight: '6vw',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: 0,
+        },
     },
     title: {
         marginTop: '5vh',
-        marginBottom: '5vh'
+        marginBottom: '5vh',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '10vw',
+        },
     },
     topicsContainer: {
         display: 'flex',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+            alignItems: 'center'
+        },
     }
 }));
 
