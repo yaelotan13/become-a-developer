@@ -1,10 +1,10 @@
 export default {
   h1: {
     fontWeight: 800,
-    fontSize: '38px',
-    letterSpacing: '-0.24px',
+    fontSize: '52px',
+    letterSpacing: '2px',
     lineHeight: '40px',
-    fontFamily: "'Roboto', 'sans-serif'",
+    fontFamily: "'Nunito Sans', 'sans-serif'",
   },
   h2: {
     fontWeight: 700,
@@ -21,8 +21,8 @@ export default {
     fontFamily: "'Muli', sans-serif",
   },
   h4: {
-    fontWeight: 500,
-    fontSize: '24px',
+    fontWeight: 400,
+    fontSize: '22px',
     letterSpacing: '-0.06px',
     lineHeight: '24px',
     fontFamily: "'Muli', sans-serif",

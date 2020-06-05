@@ -4,11 +4,12 @@ import { makeStyles } from '@material-ui/styles';
 import { useDispatch } from 'react-redux';
 
 import { fetchTopics } from '../../store/topics/actions';
+import { Content } from './components';
 
 const useStyle = makeStyles(theme => ({
     container: {
         width: '100vw',
-        height: '100vh'
+        height: '100vh',
     }
 }));
 
@@ -22,7 +23,7 @@ const Home = (props) => {
 
     return (
         <Box className={classes.container}>
-            Hola!!
+            <Content />
         </Box>
     )
 };
