@@ -31,14 +31,14 @@ export default {
     fontWeight: 400,
     fontSize: '20px',
     letterSpacing: '-0.05px',
-    lineHeight: '20px',
+    lineHeight: '26px',
     fontFamily: "'Muli', sans-serif",
   },
   h6: {
     fontWeight: 300,
-    fontSize: '18px',
+    fontSize: '16px',
     letterSpacing: '-0.05px',
-    lineHeight: '20px',
+    lineHeight: '26px',
     fontFamily: "'Muli', sans-serif",
   },
   subtitle1: {

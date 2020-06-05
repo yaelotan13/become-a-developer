@@ -3,8 +3,10 @@ import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { useDispatch } from 'react-redux';
 
+import { useSelector } from '../../hooks';
+import { topicsSlector } from '../../store/selectors/topics';
 import { fetchTopics } from '../../store/topics/actions';
-import { Content } from './components';
+import { Content, Topics } from './components';
 
 const useStyle = makeStyles(theme => ({
     container: {
@@ -16,7 +18,8 @@ const useStyle = makeStyles(theme => ({
 const Home = (props) => {
     const classes = useStyle();
     const dispatch = useDispatch();
-  
+    const topicsState = useSelector(topicsSlector);
+
     useEffect(() => {
       dispatch(fetchTopics());
     }, [dispatch]);
@@ -24,6 +27,7 @@ const Home = (props) => {
     return (
         <Box className={classes.container}>
             <Content />
+            <Topics topics={topicsState.topics} />
         </Box>
     )
 };
