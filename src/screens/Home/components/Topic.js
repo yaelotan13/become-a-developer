@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Card, CardActionArea, CardMedia, CardContent } from '@material-ui/core';
+import { Box, Typography, Card, CardActionArea, CardMedia, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => ({
         height: '25vh'
     },
     title: {
+        marginTop: '2vh',
         marginBottom: '2vh'
     },
     subTitle: {
@@ -25,20 +26,22 @@ const useStyles = makeStyles(theme => ({
 
 const Topic = (props) => {
     const classes = useStyles();
-    const { title, description, image } = props;
+    const { id, title, description, image, handleClicked } = props;
 
     return (
         <Card className={classes.container}>
-            <CardActionArea>
-                <CardMedia 
-                    className={classes.img} 
-                    image={image}
-                />
-                <CardContent>
-                    <Typography variant="h5" className={classes.title}>{title}</Typography>
-                    <Typography variant="h6" className={classes.subTitle}>{description}</Typography>
-                </CardContent>
-            </CardActionArea>
+            <Box onClick={() => handleClicked(id)}>
+                <CardActionArea>
+                    <CardMedia 
+                        className={classes.img} 
+                        image={image}
+                    />
+                    <CardContent>
+                        <Typography variant="h5" className={classes.title}>{title}</Typography>
+                        <Typography variant="h6" className={classes.subTitle}>{description}</Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Box>
         </Card>
     )
 };
