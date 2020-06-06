@@ -32,7 +32,7 @@ const topics = [
     {
         id: 6,
         image: null,
-        title: 'How To Land My First Software Development Job?',
+        title: 'Land Your First Full Stack Job',
         description: 'All the practical steps you need to take till you get your first development job'
     },
     {

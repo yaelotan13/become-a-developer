@@ -59,7 +59,7 @@ const Content = (props) => {
     return (
         <Box className={classes.container}>
             <Box className={classes.img} />
-            <Typography variant="h1" className={classes.title}>Become a Software Developer</Typography>
+            <Typography variant="h1" className={classes.title}>Become a Full Stack Developer</Typography>
             <Typography variant="h4" className={classes.subTitle}>All you need for starting your new career in one place</Typography>
             <Link 
                 activeClass="active" 
@@ -68,7 +68,7 @@ const Content = (props) => {
                 smooth={true} 
                 duration={800} 
             >
-                <PrimaryButton title="Start Discovering"/>
+                <PrimaryButton title="Start Discovering" />
             </Link>
         </Box>
     )
