@@ -12,7 +12,7 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "cypress": "^4.7.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "history": "^4.10.1",
     "lite-server": "^2.5.4",
     "react": "^16.13.1",
